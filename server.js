@@ -33,9 +33,13 @@ db.connect((err) => {
 const teamRoutes = require('./routes/teams');
 app.use('/api/teams', teamRoutes);
 
-// Import and use the team routes
+// Import and use the dart_score routes
 const dartScoreRoutes = require('./routes/dart_score');
 app.use('/api/dart_score', dartScoreRoutes);
+
+// Import and use the team stats routes
+const teamScoreRoutes = require('./routes/team_stats');
+app.use('/api/team_stats', teamScoreRoutes);
 
 
 // JWT secret key
