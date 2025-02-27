@@ -37,6 +37,10 @@ app.use('/api/teams', teamRoutes);
 const dartScoreRoutes = require('./routes/dart_score');
 app.use('/api/dart_score', dartScoreRoutes);
 
+// Import and use the dart_score_night routes
+const dartScoreNightRoutes = require('./routes/dart_score_night');
+app.use('/api/dart_score_night', dartScoreNightRoutes);
+
 // Import and use the team stats routes
 const teamScoreRoutes = require('./routes/team_stats');
 app.use('/api/team_stats', teamScoreRoutes);
